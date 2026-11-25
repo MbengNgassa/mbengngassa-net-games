@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Boat Racing — arcade water racing preview">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1513"/>
+      <stop offset="55%" stop-color="#172420"/>
+      <stop offset="100%" stop-color="#1d2b26"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#122826"/>
+      <stop offset="45%" stop-color="#0d1e1e"/>
+      <stop offset="100%" stop-color="#091313"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2b896"/>
+      <stop offset="100%" stop-color="#e4a382" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0%" stop-color="#e4a382"/>
+      <stop offset="55%" stop-color="#f6f3ed"/>
+      <stop offset="100%" stop-color="#c98867"/>
+    </linearGradient>
+    <linearGradient id="wake" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e4a382" stop-opacity="0.0"/>
+      <stop offset="50%" stop-color="#6ee7b7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f6f3ed" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1160" cy="360" r="145" fill="url(#sun)" opacity="0.55"/>
+
+  <!-- Distant coastal cliffs -->
+  <path d="M0 440 L180 390 L380 420 L620 370 L860 415 L1080 385 L1360 405 L1600 375 L1600 470 L0 470 Z" fill="#131c1a"/>
+  <path d="M0 470 L1600 470 L1600 900 L0 900 Z" fill="url(#water)"/>
+
+  <!-- Water reflections & racing course lanes -->
+  <g opacity="0.25" stroke="#e4a382" stroke-width="2" fill="none">
+    <path d="M220 530 Q800 505 1420 535"/>
+    <path d="M120 610 Q780 580 1500 620"/>
+    <path d="M40 720 Q780 685 1560 735"/>
+  </g>
+  <ellipse cx="1160" cy="540" rx="160" ry="18" fill="#e4a382" opacity="0.12"/>
+
+  <!-- Course buoys -->
+  <g>
+    <ellipse cx="470" cy="535" rx="20" ry="7" fill="#081111" opacity="0.55"/>
+    <path d="M458 534 L470 492 L482 534 Z" fill="#e4a382"/>
+    <rect x="466" y="486" width="8" height="10" rx="2" fill="#f6f3ed"/>
+
+    <ellipse cx="1290" cy="575" rx="22" ry="8" fill="#081111" opacity="0.55"/>
+    <path d="M1276 574 L1290 528 L1304 574 Z" fill="#34d399"/>
+    <rect x="1285" y="521" width="10" height="10" rx="2" fill="#f6f3ed"/>
+  </g>
+
+  <!-- Wake spray behind hero speedboat -->
+  <path d="M210 645 Q470 615 730 610 L690 665 Q420 685 140 705 Z" fill="url(#wake)"/>
+  <path d="M250 665 Q480 650 715 642" stroke="#f6f3ed" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.65"/>
+
+  <!-- Rival speedboat in background -->
+  <g transform="translate(880, 505) scale(0.55)" opacity="0.72">
+    <path d="M0 70 L210 42 L330 62 L285 88 L20 92 Z" fill="#2c3e38" stroke="#b8bfb9" stroke-width="2"/>
+    <path d="M95 48 L155 24 L235 45 Z" fill="#151918"/>
+  </g>
+
+  <!-- Hero hydroplane speedboat -->
+  <g transform="translate(520, 520)">
+    <!-- Shadow -->
+    <ellipse cx="260" cy="122" rx="260" ry="22" fill="#040808" opacity="0.65"/>
+    <!-- Hull -->
+    <path d="M18 96 L430 46 L590 76 L510 112 L42 116 Z" fill="url(#hull)"/>
+    <path d="M18 96 L430 46 L455 62 L42 106 Z" fill="#f6f3ed" opacity="0.35"/>
+    <!-- Canopy -->
+    <path d="M175 64 L285 26 L405 52 L340 68 Z" fill="#151918" stroke="#e4a382" stroke-width="2.5"/>
+    <!-- Racing stripe & #09 badge -->
+    <path d="M95 92 L455 58 L475 72 L115 102 Z" fill="#151918"/>
+    <text x="195" y="96" fill="#e4a382" font-family="'DM Sans', sans-serif" font-size="22" font-weight="700" letter-spacing="2">01</text>
+  </g>
+
+  <!-- Editorial overlay badge -->
+  <g transform="translate(96, 86)">
+    <text x="0" y="0" fill="#e4a382" font-family="'DM Sans', sans-serif" font-size="16" font-weight="600" letter-spacing="3.5">ARCADE WATER RACING</text>
+    <text x="0" y="64" fill="#f6f3ed" font-family="'Newsreader', Georgia, serif" font-size="62" font-weight="400">Boat Racing</text>
+    <text x="0" y="106" fill="#b8bfb9" font-family="'DM Sans', sans-serif" font-size="22">High-speed water circuits · Boost gates · Cloud arcade</text>
+  </g>
+</svg>
